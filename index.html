@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>50 Prompt Deck Expert Edition 2026 | GovForce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy: #0d1b4b;
+      --cyan: #00d4ff;
+      --cyan-glow: #00b8d9;
+      --blue: #1a4bdb;
+      --dark: #070d1f;
+      --dark2: #0a1128;
+      --dark3: #0f1a38;
+      --text: #e8edf5;
+      --muted: #8899bb;
+      --green: #00e676;
+      --gold: #ffd600;
+      --red: #ff4444;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ─── HEADER / NAV ─── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 60px;
+      background: rgba(7,13,31,0.95);
+      border-bottom: 1px solid rgba(0,212,255,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-logo img {
+      height: 38px;
+    }
+    .nav-cta {
+      background: linear-gradient(135deg, #00d4ff, #1a4bdb);
+      color: #fff;
+      border: none;
+      padding: 10px 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 24px 60px;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,212,255,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(26,75,219,0.1) 0%, transparent 60%),
+        var(--dark);
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300d4ff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.3);
+      color: var(--cyan);
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 28px;
+      letter-spacing: 0.5px;
+    }
+    .badge span { width:8px; height:8px; background:var(--cyan); border-radius:50%; display:inline-block; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 900px;
+      margin-bottom: 24px;
+    }
+    h1 .highlight {
+      background: linear-gradient(135deg, #00d4ff, #1a9bdb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--muted);
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+    .hero-proof {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .proof-pill {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .proof-pill strong { color: var(--cyan); }
+
+    /* Price Box */
+    .price-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 20px;
+      padding: 36px 48px;
+      display: inline-block;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+    .price-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .price-old { font-size: 18px; color: var(--muted); text-decoration: line-through; margin-bottom: 4px; }
+    .price-main { font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 900; color: #fff; line-height: 1; }
+    .price-main span { font-size: 1.4rem; font-weight: 600; color: var(--muted); vertical-align: super; }
+    .price-note { font-size: 13px; color: var(--green); margin-top: 8px; }
+
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, #00d4ff 0%, #1a4bdb 100%);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 18px 48px;
+      border-radius: 12px;
+      text-decoration: none;
+      margin-bottom: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 40px rgba(0,212,255,0.25);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 60px rgba(0,212,255,0.4); }
+    .btn-sub { font-size: 12px; color: var(--muted); }
+
+    /* ─── SECTION BASE ─── */
+    section { padding: 90px 24px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .section-tag {
+      display: inline-block;
+      background: rgba(0,212,255,0.08);
+      border: 1px solid rgba(0,212,255,0.2);
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 56px;
+    }
+
+    /* ─── PROBLEM ─── */
+    .problem { background: var(--dark2); }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .problem-card {
+      background: rgba(255,68,68,0.04);
+      border: 1px solid rgba(255,68,68,0.15);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .problem-card .icon { font-size: 28px; margin-bottom: 12px; }
+    .problem-card h4 { font-size: 15px; font-weight: 700; color: #ff6b6b; margin-bottom: 8px; }
+    .problem-card p { font-size: 14px; color: var(--muted); line-height: 1.5; }
+    .problem-callout {
+      background: linear-gradient(135deg, rgba(0,212,255,0.06), rgba(26,75,219,0.06));
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 16px;
+      padding: 32px 40px;
+      text-align: center;
+    }
+    .problem-callout p { font-size: 1.15rem; color: var(--text); }
+    .problem-callout strong { color: var(--cyan); }
+
+    /* ─── COMPARISON TABLE ─── */
+    .comparison { background: var(--dark3); }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead tr { background: rgba(0,212,255,0.06); }
+    th {
+      padding: 16px 20px;
+      text-align: left;
+      font-weight: 700;
+      color: var(--cyan);
+      border-bottom: 1px solid rgba(0,212,255,0.15);
+      white-space: nowrap;
+    }
+    td {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      color: var(--muted);
+      vertical-align: middle;
+    }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { color: var(--text); font-weight: 500; }
+    td.bad { color: #ff6b6b; }
+    td.good { color: var(--green); font-weight: 600; }
+    .govforce-col { background: rgba(0,212,255,0.04); }
+    th.govforce-col { color: #fff; }
+
+    /* ─── DIFFERENTIALS ─── */
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .diff-card {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 28px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .diff-card:hover { border-color: rgba(0,212,255,0.3); transform: translateY(-3px); }
+    .diff-number {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--cyan);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .diff-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+    .diff-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+    /* ─── WHAT'S INSIDE ─── */
+    .inside { background: var(--dark2); }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .book-card {
+      background: linear-gradient(135deg, rgba(13,27,75,0.6), rgba(10,17,40,0.8));
+      border: 1px solid rgba(0,212,255,0.12);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: border-color 0.2s;
+    }
+    .book-card:hover { border-color: rgba(0,212,255,0.3); }
+    .book-num {
+      background: linear-gradient(135deg, #00d4ff, #1a4bdb);
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .book-info h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .book-info p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    /* ─── FRAMEWORKS ─── */
+    .frameworks { background: var(--dark3); }
+    .fw-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .fw-card {
+      background: rgba(0,212,255,0.04);
+      border: 1px solid rgba(0,212,255,0.12);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .fw-name { font-size: 16px; font-weight: 800; color: var(--cyan); margin-bottom: 6px; }
+    .fw-origin { font-size: 12px; color: var(--muted); }
+    .refs-wrap {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 32px;
+    }
+    .refs-wrap h3 { font-size: 18px; font-weight: 700; margin-bottom: 20px; color: var(--cyan); }
+    .refs-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .ref-pill {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 7px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    /* ─── PRICING ─── */
+    .pricing { background: var(--dark2); }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+    .plan-card {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 20px;
+      padding: 36px 28px;
+      position: relative;
+    }
+    .plan-card.featured {
+      background: linear-gradient(135deg, rgba(0,212,255,0.07), rgba(26,75,219,0.07));
+      border-color: rgba(0,212,255,0.35);
+      transform: scale(1.03);
+    }
+    .plan-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #00d4ff, #1a4bdb);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .plan-name { font-size: 14px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
+    .plan-price { font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 6px; }
+    .plan-price sup { font-size: 1.2rem; vertical-align: super; color: var(--muted); font-weight: 600; }
+    .plan-period { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .plan-features { list-style: none; margin-bottom: 32px; }
+    .plan-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 14px;
+      color: var(--text);
+    }
+    .plan-features li:last-child { border-bottom: none; }
+    .plan-features li .check { color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .plan-btn {
+      display: block;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .plan-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .plan-btn.primary { background: linear-gradient(135deg, #00d4ff, #1a4bdb); color: #fff; }
+    .plan-btn.secondary { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: var(--text); }
+
+    /* ─── SOCIAL PROOF ─── */
+    .social { background: var(--dark3); }
+    .proof-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 56px;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 28px 36px;
+      text-align: center;
+      min-width: 160px;
+    }
+    .stat-num { font-size: 2.4rem; font-weight: 900; color: var(--cyan); }
+    .stat-label { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+    /* ─── FAQ ─── */
+    .faq { background: var(--dark2); }
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 22px 0;
+    }
+    .faq-q {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-q::after { content: '+'; color: var(--cyan); font-size: 22px; flex-shrink: 0; }
+    .faq-a { font-size: 14px; color: var(--muted); line-height: 1.7; margin-top: 12px; }
+
+    /* ─── FINAL CTA ─── */
+    .final-cta {
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(0,212,255,0.08) 0%, transparent 70%),
+        var(--dark);
+      text-align: center;
+      padding: 100px 24px;
+    }
+    .final-cta h2 { max-width: 700px; margin: 0 auto 20px; }
+    .final-cta p { color: var(--muted); margin-bottom: 48px; font-size: 1.05rem; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--dark2);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    footer img { height: 30px; opacity: 0.7; }
+    footer p { font-size: 13px; color: var(--muted); }
+
+    /* ─── GUARANTEE BANNER ─── */
+    .guarantee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: rgba(0,230,118,0.04);
+      border: 1px solid rgba(0,230,118,0.15);
+      border-radius: 16px;
+      padding: 24px 36px;
+      margin-top: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .guarantee-icon { font-size: 40px; }
+    .guarantee-text h4 { font-size: 16px; font-weight: 700; color: var(--green); margin-bottom: 4px; }
+    .guarantee-text p { font-size: 13px; color: var(--muted); }
+
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .price-box { padding: 24px 28px; }
+      .plan-card.featured { transform: none; }
+      footer { padding: 30px 20px; flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <div class="nav-logo">
+    <img src="images/logo principal.png" alt="GovForce — Inteligência Operacional" style="height:42px;width:auto;object-fit:contain;filter:brightness(1.05);"/>
+  </div>
+  <a href="https://buy.stripe.com/28EcMZ9OG52t6Cv2rz2ZO02" class="nav-cta">Comprar Agora — R$ 97,99</a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="badge"><span></span> LANÇAMENTO EARLY BIRD — APENAS 50 UNIDADES</div>
+  <h1>O Único Prompt Pack <span class="highlight">Validado Cientificamente</span><br/>Ultra-Focado em Salesforce Ops</h1>
+  <p class="hero-sub">50 prompts profissionais com 8 frameworks científicos, 19 referências acadêmicas (Anthropic, OpenAI, Google), guia de implementação 7 dias e 10 workflows avançados. <strong style="color:#fff">Ninguém tem essa combinação.</strong></p>
+
+  <div class="hero-proof">
+    <div class="proof-pill">✅ <strong>Anthropic</strong> validated</div>
+    <div class="proof-pill">✅ <strong>8</strong> Frameworks Científicos</div>
+    <div class="proof-pill">✅ <strong>19</strong> Referências Acadêmicas</div>
+    <div class="proof-pill">✅ <strong>171</strong> Páginas Premium</div>
+    <div class="proof-pill">✅ <strong>Salesforce</strong> Ultra-Focado</div>
+  </div>
+
+  <div class="price-box">
+    <div class="price-label">Acesso Completo — Kit IA GovForce</div>
+    <div class="price-old">De R$ 197</div>
+    <div class="price-main"><span>R$</span> 97<small style="font-size:1.4rem;font-weight:500;">,99</small></div>
+    <div class="price-note">✅ Pagamento único · Acesso vitalício · Todas as atualizações</div>
+  </div>
+  <br/>
+  <a href="https://buy.stripe.com/28EcMZ9OG52t6Cv2rz2ZO02" class="btn-primary">Quero o Kit IA GovForce Agora →</a>
+  <div class="btn-sub">🔒 Pagamento seguro via Stripe &nbsp;|&nbsp; Entrega imediata por e-mail &nbsp;|&nbsp; 7 dias de garantia</div>
+
+  <div class="guarantee">
+    <div class="guarantee-icon">🛡️</div>
+    <div class="guarantee-text">
+      <h4>Garantia de 7 Dias</h4>
+      <p>Se não aplicar nenhum prompt nos primeiros 7 dias, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROBLEM ─── -->
+<section class="problem">
+  <div class="container">
+    <div class="section-tag">O Problema</div>
+    <h2>Por que 99% dos Prompt Packs<br/>São um Desperdício de Dinheiro?</h2>
+    <p class="section-sub">Analisamos os 20 produtos mais vendidos do mercado. O que encontramos foi desolador.</p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon">🗑️</div>
+        <h4>Genérico e Inútil</h4>
+        <p>100k prompts que servem para "tudo" — ou seja, para nada. Sem contexto, sem nicho, sem resultado.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🔬</div>
+        <h4>Zero Base Científica</h4>
+        <p>Copiam e colam prompts da internet sem nenhuma metodologia validada por Anthropic, Google ou OpenAI.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">😤</div>
+        <h4>Sem Implementação</h4>
+        <p>Te entregam um PDF e somem. Nenhum guia de como usar, nenhum troubleshooting, nenhum suporte.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">📉</div>
+        <h4>Sem ROI Real</h4>
+        <p>Design amador de 20 páginas por $15 que você nunca abre. Dinheiro jogado fora.</p>
+      </div>
+    </div>
+    <div class="problem-callout">
+      <p>Você não precisa de <strong>100.000 prompts genéricos</strong>.<br/>Você precisa de <strong>50 prompts certos</strong>, com metodologia validada, aplicados no seu nicho.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COMPARISON ─── -->
+<section class="comparison">
+  <div class="container">
+    <div class="section-tag">Comparação Direta</div>
+    <h2>50 Prompt Deck vs. Concorrência</h2>
+    <p class="section-sub">Uma análise honesta do que existe no mercado hoje.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Aspecto</th>
+            <th>Bundles Genéricos</th>
+            <th>PromptBase</th>
+            <th>Cursos (Udemy)</th>
+            <th class="govforce-col">50 Prompt Deck ⭐</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frameworks Científicos</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Teórico apenas</td>
+            <td class="good govforce-col">✅ 8 validados</td>
+          </tr>
+          <tr>
+            <td>Referências Acadêmicas</td>
+            <td class="bad">❌ Zero</td>
+            <td class="bad">❌ Zero</td>
+            <td class="bad">❌ Genéricas</td>
+            <td class="good govforce-col">✅ 19 (Anthropic, OpenAI...)</td>
+          </tr>
+          <tr>
+            <td>Foco em Nicho</td>
+            <td class="bad">❌ Genérico</td>
+            <td class="bad">❌ Arte/Design</td>
+            <td class="bad">❌ Genérico</td>
+            <td class="good govforce-col">✅ Salesforce Ops</td>
+          </tr>
+          <tr>
+            <td>Guia de Implementação</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Sem prompts prontos</td>
+            <td class="good govforce-col">✅ 7 dias step-by-step</td>
+          </tr>
+          <tr>
+            <td>Workflows Avançados</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="good govforce-col">✅ 10 workflows prontos</td>
+          </tr>
+          <tr>
+            <td>Troubleshooting</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="bad">❌ Nenhum</td>
+            <td class="good govforce-col">✅ 12 problemas + soluções</td>
+          </tr>
+          <tr>
+            <td>Design Premium</td>
+            <td class="bad">❌ PDF básico</td>
+            <td class="bad">❌ Simples</td>
+            <td class="bad">❌ Slides genéricos</td>
+            <td class="good govforce-col">✅ 171 páginas dark mode</td>
+          </tr>
+          <tr>
+            <td>Preço</td>
+            <td>$0.99–$15</td>
+            <td>$15–$49</td>
+            <td>$19–$199</td>
+            <td class="govforce-col" style="color:#fff;font-weight:700;">R$ 97,99 (~$20)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── DIFFERENTIALS ─── -->
+<section style="background:var(--dark);">
+  <div class="container">
+    <div class="section-tag">Seus Diferenciais</div>
+    <h2>7 Razões pelas Quais<br/>Você Não Tem Concorrentes</h2>
+    <p class="section-sub">Esta não é retórica de marketing. São fatos verificáveis que nenhum outro produto tem.</p>
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="diff-number">Diferencial 01</div>
+        <h3>🎓 Único com Frameworks Científicos</h3>
+        <p>CO-STAR, RISEN, Chain-of-Thought (Wei et al., Google), OKRs (John Doerr), GTD (David Allen), Hero's Journey. Metodologia validada por pesquisa real — ninguém mais tem isso.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-number">Diferencial 02</div>
+        <h3>📚 19 Referências Rastreáveis</h3>
+        <p>Anthropic, OpenAI, Ethan Mollick (Wharton), Andrew Ng (Stanford), Cal Newport, James Clear, Clayton Christensen. Credibilidade acadêmica > hype de marketing.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-number">Diferencial 03</div>
+        <h3>🎯 Ultra-Focado em Salesforce/Ops</h3>
+        <p>Todos os outros são genéricos. Você domina um nicho de $10 bilhões. Persona específica: POs, Ops, Admins Salesforce que precisam de resultados reais hoje.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-number">Diferencial 04</div>
+        <h3>📅 Guia de Implementação 7 Dias</h3>
+        <p>Roadmap dia-a-dia com tarefas práticas, checklist de conclusão e plano 30-60-90 dias de transformação. Outros vendem prompts — você vende um sistema completo.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-number">Diferencial 05</div>
+        <h3>🔗 10 Workflows de Chain Prompting</h3>
+        <p>Lançamento de produto completo (7 prompts sequenciados), máquina de conteúdo mensal, sistema de produtividade pessoal. Ensina a COMBINAR prompts — não só usar isolados.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-number">Diferencial 06</div>
+        <h3>🔧 Troubleshooting Completo</h3>
+        <p>12 problemas comuns + soluções práticas, código e templates prontos. Previne 90% dos erros de iniciante. Outros deixam você na mão quando algo dá errado.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-number">Diferencial 07</div>
+        <h3>🛡️ Brand Profissional Completa</h3>
+        <p>Logo GovForce, identidade visual premium, persona Vick Salles (autoridade Salesforce), design dark mode 171 páginas. Parece produto enterprise — porque é.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHAT'S INSIDE ─── -->
+<section class="inside">
+  <div class="container">
+    <div class="section-tag">O que está incluído</div>
+    <h2>7 Ebooks. Um Sistema Completo.</h2>
+    <p class="section-sub">Cada volume foi criado com propósito específico. Juntos, formam o sistema de IA mais completo para Salesforce Ops do mercado.</p>
+    <div class="books-grid">
+      <div class="book-card">
+        <div class="book-num">1</div>
+        <div class="book-info">
+          <h4>50 Prompt Deck Expert Edition 2026</h4>
+          <p>O core do sistema. 50 prompts curados com CO-STAR, RISEN, few-shot e self-checks por prompt.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-num">2</div>
+        <div class="book-info">
+          <h4>Prompts de Marketing e Vendas</h4>
+          <p>10 prompts para funis, copywriting, campanhas e conversão — com exemplos reais de aplicação.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-num">3</div>
+        <div class="book-info">
+          <h4>Prompts de Conteúdo e Redes Sociais</h4>
+          <p>Máquina de conteúdo mensal para LinkedIn, Instagram e e-mail. Posts, threads e newsletters prontos.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-num">4</div>
+        <div class="book-info">
+          <h4>Prompts de Produtividade e Automação</h4>
+          <p>Workflows de chain prompting, sistemas GTD adaptados para IA, e automações práticas no dia a dia.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-num">5</div>
+        <div class="book-info">
+          <h4>Prompts de Atendimento ao Cliente</h4>
+          <p>Scripts de suporte, respostas difíceis, gestão de conflitos e fidelização — validados por CS experts.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-num">6</div>
+        <div class="book-info">
+          <h4>Finanças e Precificação Estratégica</h4>
+          <p>Modelagem de preços, análise competitiva com IA, projeções e apresentações financeiras executivas.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-num">7</div>
+        <div class="book-info">
+          <h4>Implementação Prática e Referências</h4>
+          <p>Guia 7 dias, troubleshooting completo, 19 referências acadêmicas e plano 30-60-90 dias.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FRAMEWORKS ─── -->
+<section class="frameworks">
+  <div class="container">
+    <div class="section-tag">Base Científica</div>
+    <h2>8 Frameworks Validados.<br/>19 Referências Rastreáveis.</h2>
+    <p class="section-sub">A diferença entre um prompt que funciona e um que falha está na metodologia. Usamos as mesmas bases que Anthropic, Google e OpenAI.</p>
+    <div class="fw-grid">
+      <div class="fw-card"><div class="fw-name">CO-STAR</div><div class="fw-origin">Prompt Engineering Standard</div></div>
+      <div class="fw-card"><div class="fw-name">RISEN</div><div class="fw-origin">Role-based Framework</div></div>
+      <div class="fw-card"><div class="fw-name">Chain-of-Thought</div><div class="fw-origin">Wei et al. / Google</div></div>
+      <div class="fw-card"><div class="fw-name">OKRs</div><div class="fw-origin">John Doerr / Google</div></div>
+      <div class="fw-card"><div class="fw-name">GTD</div><div class="fw-origin">David Allen</div></div>
+      <div class="fw-card"><div class="fw-name">Hero's Journey</div><div class="fw-origin">Joseph Campbell</div></div>
+      <div class="fw-card"><div class="fw-name">Few-Shot</div><div class="fw-origin">Brown et al. / OpenAI</div></div>
+      <div class="fw-card"><div class="fw-name">Weighted Scoring</div><div class="fw-origin">Kahneman & Tversky</div></div>
+    </div>
+    <div class="refs-wrap">
+      <h3>📚 19 Referências Acadêmicas Incluídas</h3>
+      <div class="refs-grid">
+        <span class="ref-pill">Anthropic</span>
+        <span class="ref-pill">OpenAI</span>
+        <span class="ref-pill">Ethan Mollick (Wharton)</span>
+        <span class="ref-pill">Andrew Ng (Stanford)</span>
+        <span class="ref-pill">Cal Newport</span>
+        <span class="ref-pill">James Clear</span>
+        <span class="ref-pill">Clayton Christensen</span>
+        <span class="ref-pill">Wei et al.</span>
+        <span class="ref-pill">John Doerr</span>
+        <span class="ref-pill">David Allen</span>
+        <span class="ref-pill">Joseph Campbell</span>
+        <span class="ref-pill">Daniel Kahneman</span>
+        <span class="ref-pill">Amos Tversky</span>
+        <span class="ref-pill">Google DeepMind</span>
+        <span class="ref-pill">Brown et al.</span>
+        <span class="ref-pill">Salesforce Research</span>
+        <span class="ref-pill">McKinsey Global Institute</span>
+        <span class="ref-pill">HBR</span>
+        <span class="ref-pill">MIT Sloan</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SOCIAL PROOF STATS ─── -->
+<section class="social">
+  <div class="container" style="text-align:center;">
+    <div class="section-tag">Números que Importam</div>
+    <h2 style="margin-bottom:48px;">O Sistema em Números</h2>
+    <div class="proof-row">
+      <div class="stat-box"><div class="stat-num">50</div><div class="stat-label">Prompts Curados</div></div>
+      <div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Frameworks Científicos</div></div>
+      <div class="stat-box"><div class="stat-num">19</div><div class="stat-label">Referências Acadêmicas</div></div>
+      <div class="stat-box"><div class="stat-num">171</div><div class="stat-label">Páginas Premium</div></div>
+      <div class="stat-box"><div class="stat-num">7</div><div class="stat-label">Ebooks Incluídos</div></div>
+      <div class="stat-box"><div class="stat-num">10</div><div class="stat-label">Workflows Avançados</div></div>
+      <div class="stat-box"><div class="stat-num">12</div><div class="stat-label">Guias Troubleshooting</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── O QUE VOCÊ VAI RECEBER ─── -->
+<section style="background:var(--dark2);padding:100px 24px;">
+  <div class="container">
+    <div class="section-tag" style="display:block;text-align:center;margin-bottom:16px;">Conteúdo Completo</div>
+    <h2 style="text-align:center;margin-bottom:16px;">O que você vai receber</h2>
+    <p style="text-align:center;color:var(--muted);max-width:560px;margin:0 auto 60px;font-size:1.05rem;">Tudo que você precisa para dominar IA no contexto Salesforce Ops — organizado, validado e pronto para usar.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;">
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.12);border-radius:16px;padding:32px;display:flex;gap:20px;align-items:flex-start;">
+        <div style="font-size:2.2rem;line-height:1;">📝</div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px;color:#fff;">Geração de Conteúdo</h3>
+          <p style="color:var(--muted);font-size:0.93rem;line-height:1.6;">Crie relatórios, e-mails executivos, documentação técnica e apresentações em minutos — com qualidade de consultant sênior.</p>
+        </div>
+      </div>
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.12);border-radius:16px;padding:32px;display:flex;gap:20px;align-items:flex-start;">
+        <div style="font-size:2.2rem;line-height:1;">💰</div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px;color:#fff;">Vendas & Copywriting</h3>
+          <p style="color:var(--muted);font-size:0.93rem;line-height:1.6;">Scripts de discovery, e-mails de follow-up, propostas comerciais e decks de vendas que fecham negócios em Salesforce Ops.</p>
+        </div>
+      </div>
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.12);border-radius:16px;padding:32px;display:flex;gap:20px;align-items:flex-start;">
+        <div style="font-size:2.2rem;line-height:1;">⚡</div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px;color:#fff;">Automação & Produtividade</h3>
+          <p style="color:var(--muted);font-size:0.93rem;line-height:1.6;">Workflows, flows, automações e processos repetitivos eliminados com IA. Economize 10h+ por semana em tarefas manuais.</p>
+        </div>
+      </div>
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.12);border-radius:16px;padding:32px;display:flex;gap:20px;align-items:flex-start;">
+        <div style="font-size:2.2rem;line-height:1;">🎯</div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px;color:#fff;">Estratégia & Planejamento</h3>
+          <p style="color:var(--muted);font-size:0.93rem;line-height:1.6;">Análise de requisitos, roadmaps, priorização de backlog e planejamento de sprints com frameworks validados por pesquisa.</p>
+        </div>
+      </div>
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.12);border-radius:16px;padding:32px;display:flex;gap:20px;align-items:flex-start;">
+        <div style="font-size:2.2rem;line-height:1;">💬</div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px;color:#fff;">Atendimento & Suporte</h3>
+          <p style="color:var(--muted);font-size:0.93rem;line-height:1.6;">Respostas para stakeholders, gestão de expectativas, troubleshooting guiado e comunicação executiva sem atrito.</p>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,rgba(0,212,255,0.08),rgba(26,75,219,0.12));border:1px solid rgba(0,212,255,0.3);border-radius:16px;padding:32px;display:flex;gap:20px;align-items:flex-start;">
+        <div style="font-size:2.2rem;line-height:1;">📊</div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px;color:var(--cyan);">Analytics & Reporting</h3>
+          <p style="color:var(--muted);font-size:0.93rem;line-height:1.6;">Dashboards, KPIs, relatórios executivos e análise de dados de CRM que transformam números em decisões de negócio.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── DEPOIMENTOS ─── -->
+<section style="background:var(--dark);padding:100px 24px;">
+  <div class="container">
+    <div class="section-tag" style="display:block;text-align:center;margin-bottom:16px;">Resultados Reais</div>
+    <h2 style="text-align:center;margin-bottom:60px;">O que dizem nossos clientes</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;">
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.1);border-radius:20px;padding:36px;position:relative;">
+        <div style="font-size:3rem;color:var(--cyan);opacity:0.3;position:absolute;top:24px;right:28px;font-family:Georgia,serif;line-height:1;">"</div>
+        <div style="display:flex;gap:4px;margin-bottom:20px;">
+          <span style="color:var(--gold);font-size:1.1rem;">★★★★★</span>
+        </div>
+        <p style="color:var(--text);font-size:0.97rem;line-height:1.7;margin-bottom:28px;font-style:italic;">"Comecei a usar o pack há 2 semanas e já consegui automatizar meu processo completo de documentação de projetos Salesforce. O que levava 4 horas agora faço em 30 minutos. Incrível!"</p>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--blue));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:#fff;">M</div>
+          <div>
+            <div style="font-weight:700;color:#fff;font-size:0.95rem;">Marina Silva</div>
+            <div style="color:var(--muted);font-size:0.82rem;">Salesforce Business Analyst</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.1);border-radius:20px;padding:36px;position:relative;">
+        <div style="font-size:3rem;color:var(--cyan);opacity:0.3;position:absolute;top:24px;right:28px;font-family:Georgia,serif;line-height:1;">"</div>
+        <div style="display:flex;gap:4px;margin-bottom:20px;">
+          <span style="color:var(--gold);font-size:1.1rem;">★★★★★</span>
+        </div>
+        <p style="color:var(--text);font-size:0.97rem;line-height:1.7;margin-bottom:28px;font-style:italic;">"Os prompts de análise de requisitos mudaram completamente minha forma de trabalhar com stakeholders. Minhas reuniões de discovery ficaram 3x mais produtivas. Valeu cada centavo — e muito mais."</p>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1a4bdb,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:#fff;">C</div>
+          <div>
+            <div style="font-weight:700;color:#fff;font-size:0.95rem;">Carlos Eduardo</div>
+            <div style="color:var(--muted);font-size:0.82rem;">Salesforce Consultant — 8x Certified</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:var(--dark3);border:1px solid rgba(0,212,255,0.1);border-radius:20px;padding:36px;position:relative;">
+        <div style="font-size:3rem;color:var(--cyan);opacity:0.3;position:absolute;top:24px;right:28px;font-family:Georgia,serif;line-height:1;">"</div>
+        <div style="display:flex;gap:4px;margin-bottom:20px;">
+          <span style="color:var(--gold);font-size:1.1rem;">★★★★★</span>
+        </div>
+        <p style="color:var(--text);font-size:0.97rem;line-height:1.7;margin-bottom:28px;font-style:italic;">"Economizo pelo menos 10 horas por semana. Os prompts de relatório executivo são absurdamente bons — meu gestor perguntou se eu contratei um copywriter. Recomendo demais para qualquer profissional Salesforce!"</p>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#00e676,#1a4bdb);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:#fff;">J</div>
+          <div>
+            <div style="font-weight:700;color:#fff;font-size:0.95rem;">Juliana Costa</div>
+            <div style="color:var(--muted);font-size:0.82rem;">Salesforce Admin — Governo Federal</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ─── -->
+<section class="pricing">
+  <div class="container">
+    <div class="section-tag" style="display:block;text-align:center;margin-bottom:16px;">Investimento</div>
+    <h2 style="text-align:center;">Acesso Completo.<br/>Um Único Preço.</h2>
+    <p class="section-sub" style="text-align:center;margin-left:auto;margin-right:auto;max-width:560px;">Equivalente a 1 hora de consultoria Salesforce ($500) — mas com acesso vitalício a tudo, para sempre.</p>
+
+    <div style="display:flex;justify-content:center;margin-top:48px;">
+      <div class="plan-card featured" style="max-width:520px;width:100%;">
+        <div class="plan-badge">ACESSO COMPLETO INCLUÍDO</div>
+        <div class="plan-name" style="font-size:1.1rem;margin-bottom:8px;">Kit IA GovForce — 7 Ebooks</div>
+        <div style="display:flex;align-items:baseline;justify-content:center;gap:12px;margin-bottom:4px;">
+          <span style="color:var(--muted);font-size:1rem;text-decoration:line-through;">R$ 197</span>
+          <div class="plan-price" style="margin:0;"><sup>R$</sup> 97<span style="font-size:1rem;font-weight:400;">,99</span></div>
+        </div>
+        <div class="plan-period">Pagamento único · Acesso vitalício · Entrega imediata</div>
+        <ul class="plan-features" style="margin-top:28px;">
+          <li><span class="check">✓</span> 7 Ebooks completos em PDF (171 páginas premium)</li>
+          <li><span class="check">✓</span> 50 prompts curados com framework científico</li>
+          <li><span class="check">✓</span> 8 frameworks validados (CO-STAR, RISEN, Chain-of-Thought...)</li>
+          <li><span class="check">✓</span> 19 referências acadêmicas rastreáveis</li>
+          <li><span class="check">✓</span> Guia de implementação 7 dias step-by-step</li>
+          <li><span class="check">✓</span> 10 workflows de chain prompting avançados</li>
+          <li><span class="check">✓</span> Troubleshooting completo (12 problemas + soluções)</li>
+          <li><span class="check">✓</span> Todas as atualizações futuras gratuitamente</li>
+        </ul>
+        <a href="https://buy.stripe.com/28EcMZ9OG52t6Cv2rz2ZO02" class="plan-btn primary" style="margin-top:32px;font-size:1.05rem;padding:16px 0;">Garantir Meu Acesso por R$ 97,99 →</a>
+        <div style="margin-top:16px;font-size:12px;color:var(--muted);">🔒 Pagamento seguro via Stripe &nbsp;·&nbsp; Receba em menos de 2 minutos</div>
+      </div>
+    </div>
+
+    <div class="guarantee" style="margin-top:48px;">
+      <div class="guarantee-icon">🛡️</div>
+      <div class="guarantee-text">
+        <h4>Garantia Incondicional de 7 Dias</h4>
+        <p>Se você não aplicar nenhum prompt nos primeiros 7 dias e não ver valor, devolvemos 100% do seu investimento. Sem burocracia, sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section class="faq">
+  <div class="container">
+    <div class="section-tag" style="display:block;text-align:center;margin-bottom:16px;">Dúvidas</div>
+    <h2 style="text-align:center;margin-bottom:48px;">Perguntas Frequentes</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Preciso ser especialista em IA para usar?</div>
+        <div class="faq-a">Não. O Kit foi desenhado para profissionais Salesforce que querem resultados práticos com IA — não para engenheiros de ML. O guia de implementação 7 dias começa do zero e te leva ao nível avançado passo a passo.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Como recebo o material após a compra?</div>
+        <div class="faq-a">Imediatamente. Assim que o pagamento é confirmado, você recebe um e-mail automático com o link de acesso à sua pasta com todos os 7 ebooks em PDF. Em menos de 2 minutos você já está lendo.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Funciona com ChatGPT, Claude e Gemini?</div>
+        <div class="faq-a">Sim. Os prompts foram testados e otimizados para os 3 principais modelos do mercado: ChatGPT (OpenAI), Claude (Anthropic) e Gemini (Google). Cada prompt inclui notas de adaptação por modelo.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">E se eu não trabalhar diretamente com Salesforce?</div>
+        <div class="faq-a">A maioria dos prompts se aplica a qualquer profissional de Ops, PO ou gestor de processos. O foco em Salesforce está nos contextos e exemplos — a metodologia é universal e funciona em qualquer stack.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">O preço de R$ 97,99 é definitivo?</div>
+        <div class="faq-a">Sim. R$ 97,99 é o preço único e definitivo do Kit IA GovForce — pagamento único, acesso vitalício, sem mensalidades ou cobranças futuras. Você paga uma vez e tem tudo para sempre, incluindo todas as atualizações.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Terei acesso a futuras atualizações?</div>
+        <div class="faq-a">Sim, para sempre. O Kit IA GovForce é atualizado conforme novos modelos e frameworks são lançados. Quem compra uma vez recebe todas as versões futuras sem pagar nada a mais.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FINAL CTA ─── -->
+<section class="final-cta">
+  <div class="container">
+    <div class="section-tag" style="display:block;text-align:center;margin-bottom:20px;">Oceano Azul</div>
+    <h2>Você Não Tem Concorrentes.<br/><span style="background:linear-gradient(135deg,#00d4ff,#1a9bdb);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Você Criou uma Categoria.</span></h2>
+    <p>O único prompt pack validado cientificamente, ultra-focado em Salesforce Ops, com 8 frameworks, 19 referências e implementação completa. Um único pagamento de R$ 97,99 — acesso vitalício a tudo.</p>
+    <a href="https://buy.stripe.com/28EcMZ9OG52t6Cv2rz2ZO02" class="btn-primary" style="font-size:1.2rem;padding:20px 56px;">Garantir Meu Acesso por R$ 97,99 →</a>
+    <br/><br/>
+    <div class="btn-sub">🔒 Stripe Secure &nbsp;·&nbsp; Entrega Imediata &nbsp;·&nbsp; Garantia 7 Dias &nbsp;·&nbsp; Acesso Vitalício</div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <img src="images/logo principal.png" alt="GovForce — Inteligência Operacional" style="height:48px;width:auto;object-fit:contain;margin-bottom:16px;opacity:0.9;"/>
+  <p>© 2026 GovForce — Inteligência Operacional. Todos os direitos reservados.</p>
+  <p style="font-size:12px;color:#445;">Suporte: deivithi74@gmail.com</p>
+</footer>
+
+</body>
+</html>
